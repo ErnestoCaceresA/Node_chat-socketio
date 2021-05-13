@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="./main.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>Chat socket io</title>
+    
+    <!-- --------- -->
+    <!-- SOCKET.IO -->
+    <!-- --------- -->
+    
+    <!-- agregando el script de socket.io ya escrito por ellos en el cual dehecho podemos acceder con localhost:3000/socket.io/socket.io.js -->
+    <script src="/socket.io/socket.io.js"></script>
+    
+</head>
+<body>
+    <!-- -------- -->
+    <!-- INTERFAZ -->
+    <!-- -------- -->
+    
+    <div id="chat-container">
+        <div id="chat-window">
+            <div id="output"></div> <!-- se ira llenando de etiquetas p con javascript con socket.io -->
+            <div id="actions"></div>
+        </div>
+        
+        <input type="text" id="username" placeholder="User name">
+        <input type="text" id="message" placeholder="Message">
+        <button id="send"> Send </button>    
+    </div>
+    
+    <!-- javascript -->
+    <script src="./chat.js"></script>
+
+</body>
+</html>
